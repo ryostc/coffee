@@ -11,6 +11,32 @@
 |
 */
 
+use App\Book;
+use Illuminate\Http\Request;
+
+/**
+* コーヒーの一覧表示(coffees.blade.php)
+*/
 Route::get('/', function () {
-    return view('welcome');
+    return view('coffees');
 });
+
+/**
+* コーヒーを追加 
+*/
+Route::post('/coffees', function (Request $request) {
+    //
+});
+
+/**
+* コーヒーを削除 
+*/
+Route::delete('/coffee/{coffee}', function (coffee $coffee) {
+    //
+});
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
