@@ -17,9 +17,8 @@ class CreateCoffeesTable extends Migration
             $table->bigIncrements('id');
             $table->string('store_name');
             $table->string('coffee_name');
-            $table->integer('temperature');
-            $table->integer('time');
             $table->string('reviwe');
+            $table->datetime('date');
             $table->timestamps();
         });
     }
