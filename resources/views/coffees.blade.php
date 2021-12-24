@@ -67,6 +67,8 @@
                                 <td class="table-text">
                                     <div>{{ $coffee->store_name }}</div>
                                     <div>{{ $coffee->coffee_name }}</div>
+                                    <div>{{ $coffee->reviwe }}</div>
+                                    <div>{{ $coffee->date }}</div>
                                 </td>
                                 
                                 <!--  コーヒー：更新ボタン -->
